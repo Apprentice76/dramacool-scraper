@@ -2,18 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
+.Applogo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .Applogo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.Appheader {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,7 +24,7 @@
   color: white;
 }
 
-.App-link {
+.Applink {
   color: #61dafb;
 }
 
