@@ -1,0 +1,22 @@
+###
+GET https://dramacool.lv/wp-json/dooplay/search/?keyword=mad%20for%20ea&nonce=dcc0b21e4b
+
+# returns id->{title, url, img, extra->{date, imdb}}
+# functionality:
+# format query string "keyword"
+# iterate thru response, display all (top 5)
+# select id -> open url inside it
+
+###
+GET https://dramacool.lv/drama-details/mad-for-each-other/
+
+# document.querySelector("#seasons > div > div > ul")
+
+# display lists
+
+# document.querySelector("#seasons > div > div > ul > li:nth-child(1) > a") --
+# use nth child, get link out of anchor tag -> goto url
+# or goto previous url, append "-{id.extra.date}-episode-{episode_number}/"
+
+###
+GET https://asianload.io/loadserver.php?id=MjU5MDk4&title=Mad+for+Each+Other+%282021%29&typesub=SUB&sub=&cover=Y292ZXIvY3JhenktcGVyc29uLWluLXRoZS1hcmVhLnBuZw==
