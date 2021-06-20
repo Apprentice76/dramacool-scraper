@@ -1,0 +1,26 @@
+.main {
+    margin: 200px auto;
+    width: 500px;
+    align-items: center;
+    text-align: center;
+}
+
+.main > div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: #918686;
+    /* margin-right: 3%; */
+}
+
+.main > input {
+    padding: 5px 20px;
+    margin: 10px 0;
+    font-family: Montserrat;
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    margin-left: 5px;
+    padding: 5px 5px;
+}

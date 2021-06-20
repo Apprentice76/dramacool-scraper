@@ -1,4 +1,4 @@
-// import styles from './App.module.css'
+import styles from '../styles/App.module.css'
 import { useState } from 'react';
 
 const App = () => {
@@ -10,9 +10,13 @@ const App = () => {
     };
 
     return (
-        <div className=''>
+        <div className={styles.main}>
             <div>Search</div>
-            <input type='text' onChange={updateQuery} value={query} />
+            <input type='text' onChange={updateQuery} value={query} placeholder='Title'/>
+            <button onClick={() => {setQuery('')}}>Go</button>
+            <div>
+                
+            </div>
         </div>
     );
 };
