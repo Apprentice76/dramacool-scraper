@@ -54,6 +54,7 @@ const App = () => {
                 placeholder='Title'
                 onKeyUp={(e) => e.key === 'Enter' && clickHandler()}
             />
+            {/* <button onClick={clickHandler}>Go</button> */}
             <Titles data={result} />
         </div>
     );
