@@ -52,8 +52,8 @@ const App = () => {
                 onChange={(event) => setQuery(event.target.value)}
                 value={query}
                 placeholder='Title'
+                onKeyUp={(e) => e.key === 'Enter' && clickHandler()}
             />
-            <button onClick={clickHandler}>Go</button>
             <Titles data={result} />
         </div>
     );
