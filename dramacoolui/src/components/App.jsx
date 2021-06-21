@@ -9,6 +9,8 @@ const App = () => {
     const [go, setGo] = useState(false);
     const [queryModified, setQueryModified] = useState(false);
 
+    // Searches only iff query length is 3 or more, query was modified
+    // after last search and button was clicked.
     useEffect(() => {
         if (query.length > 2 && go && queryModified) {
             search(query);
@@ -16,10 +18,13 @@ const App = () => {
         setGo(false);
     }, [go, query, queryModified]);
 
+    // Checks if query was modified after last search
     useEffect(() => {
         setQueryModified(true);
     }, [query]);
 
+    // Modifies `Go` value as true to trigger 1st effect, then after triggering
+    // queryModified value is set to false
     const clickHandler = () => {
         setGo(true);
         setTimeout(() => {
