@@ -1,6 +1,0 @@
-{
-  "name": "dramaCoolInterface",
-  "dependencies": {
-    "jssoup": "^0.0.12"
-  }
-}
