@@ -1,6 +1,6 @@
+import JSSoup from 'jssoup';
 const axios = require('axios');
 const DOMParser = require('dom-parser');
-// import JSSoup from 'jssoup';
 
 const fetchQuery = async (keyword) => {
     const head = 'https://dramacool.lv/wp-json/dooplay/search/?keyword';
